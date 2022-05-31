@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const baseUrl = 'http://localhost:8000'
     const catForm = document.querySelector('#cat-form');
 
     catForm.addEventListener('submit', newCat);
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             likes: 0
         }
 
-        fetch(`http://localhost:8000/cats`, {
+        fetch(`${baseUrl}/cats`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,3 +35,25 @@ document.addEventListener('DOMContentLoaded', () => {
         catForm.reset;
     }
 })
+
+function getCat() {
+    fetch(`${baseUrl}/cats`)
+        .then(resp => resp.json())
+        .then(catsArr => catsArr.forEach(cat => renderCat(cat)));
+}
+getCat();
+
+function renderCat(cat) {
+    const catCard = document.createElement('div');
+    catCard.id = `cat-${cat.id}`;
+    catCard.className = 'cat-card';
+
+    catCard.addEventListener('click', () => (cat));
+
+    const catImg = document.createElement('img');
+    catImg.src = cat.img;
+    catImg.alt = `${cat.name} image`;
+
+    const catName = document.createElement('h3');
+    catName.textContent = `${cat.name}`;
+}
