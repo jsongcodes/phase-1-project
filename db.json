@@ -1,0 +1,70 @@
+{
+  "cats": [
+    {
+      "id": 1,
+      "name": "Minari",
+      "img": "https://res.cloudinary.com/dhmlrovt9/image/upload/v1650987366/Cats/67215717119--8083889B-D765-40C6-B353-8B0ACBA5B5A5_ttgydi.jpg",
+      "age": "Age: 1",
+      "description": "Description: playful, energetic, vocal, does not like to cuddle"
+    },
+    {
+      "id": 2,
+      "name": "Udon",
+      "img": "https://res.cloudinary.com/dhmlrovt9/image/upload/v1650987364/Cats/IMG-2156_urlth3.jpg",
+      "age": "1Y/8M",
+      "description": "Calm, cuddly, loves to eat and sleep",
+      "likes": 0
+    },
+    {
+      "id": 3,
+      "name": "Ash",
+      "img": "https://www.shelterluv.com/sites/default/files/animal_pics/14654/2022/03/01/18/20220301185004.png",
+      "age": "0Y/3M",
+      "description": "Young, energetic, playful",
+      "likes": 0
+    },
+    {
+      "id": 4,
+      "name": "Pepper",
+      "img": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53495386/5/?bust=1641679524&width=600",
+      "age": "2Y/1M",
+      "description": "Vocal, playful, affectionate",
+      "likes": 1
+    },
+    {
+      "id": 5,
+      "name": "Zoey",
+      "img": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55309018/1/?bust=1651024520&width=1080",
+      "age": "0Y/7M",
+      "description": "Loves her toys, food, and space",
+      "likes": 0
+    },
+    {
+      "id": 6,
+      "name": "Gordo",
+      "img": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55258248/1/?bust=1649536045&width=600",
+      "age": "4Y/3M",
+      "description": "Low energy, sleepy, and loves to sunbathe",
+      "likes": 0
+    },
+    {
+      "id": 7,
+      "name": "Cady",
+      "img": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/55130479/1/?bust=1648431044&width=600",
+      "age": "0Y/4M",
+      "description": "Cuddly, sweet, active",
+      "likes": 0
+    },
+    {
+      "name": "Star",
+      "img": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/54636119/5/?bust=1651519764&width=600",
+      "age": "3Y/0M",
+      "description": "Cuddly, loves to eat, loves wand toys",
+      "likes": 0,
+      "id": 8
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

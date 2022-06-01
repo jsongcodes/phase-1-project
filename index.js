@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const baseUrl = 'http://localhost:8000'
+    const baseUrl = 'http://localhost:3000'
     const catForm = document.querySelector('#cat-form');
 
     catForm.addEventListener('submit', newCat);
@@ -76,5 +76,16 @@ function renderCat(cat) {
 
     likesBttn.addEventListener('click', (e) => {
         e.stopPropagation();
+        ++cat.likes;
+        likesNum.textContent = cat.likes;
+        fetch(`${baseUrl}/cats/${cat.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({ likes: cat.likes })
+        })
+        likesNum.textContent = cat.likes;
     })
 }
