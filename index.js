@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const baseUrl = 'http://localhost:3000'
     const catForm = document.querySelector('#cat-form');
+    const catContainer = document.querySelector('#cat-container');
+    const catFormContainer = document.querySelector('#cat-form-container');
 
     catForm.addEventListener('submit', newCat);
 
@@ -97,4 +99,8 @@ function renderCat(cat) {
     })
 
     catCard.append(catImg, catName, catAge, catDescription, catLikes, likesNum, likesBttn, deleteBttn);
+
+    catContainer.appendChild(catCard);
+
+    return catCard;
 }
