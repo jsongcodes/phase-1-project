@@ -56,4 +56,21 @@ function renderCat(cat) {
 
     const catName = document.createElement('h3');
     catName.textContent = `${cat.name}`;
+
+    const catAge = document.createElement('p');
+    catAge.textContent = `Age: ${cat.age}`;
+
+    const catDescription = document.createElement('p');
+    catDescription.textContent = `Description: ${cat.description}`;
+
+    const catLikes = document.createElement('p');
+    catLikes.textContent = `Likes: `;
+
+    const likesNum = document.createElement('p');
+    likesNum.className = 'likes-num';
+    likesNum.textContent = cat.likes;
+
+    const likesBttn = document.createElement('button');
+    likesBttn.className = 'likes-bttn';
+    likesBttn.textContent = '♥';
 }
