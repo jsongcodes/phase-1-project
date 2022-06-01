@@ -88,4 +88,11 @@ function renderCat(cat) {
         })
         likesNum.textContent = cat.likes;
     })
+
+    const deleteBttn = document.createElement('button');
+    deleteBttn.className = 'delete-bttn';
+    deleteBttn.textContent = 'Delete me! I\'ve been adopted!'
+    deleteBttn.addEventListener('click', (e) => {
+        e.stopPropagation();
+    })
 }
