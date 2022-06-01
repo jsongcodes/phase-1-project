@@ -73,4 +73,8 @@ function renderCat(cat) {
     const likesBttn = document.createElement('button');
     likesBttn.className = 'likes-bttn';
     likesBttn.textContent = '♥';
+
+    likesBttn.addEventListener('click', (e) => {
+        e.stopPropagation();
+    })
 }
