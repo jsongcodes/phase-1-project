@@ -95,4 +95,6 @@ function renderCat(cat) {
     deleteBttn.addEventListener('click', (e) => {
         e.stopPropagation();
     })
+
+    catCard.append(catImg, catName, catAge, catDescription, catLikes, likesNum, likesBttn, deleteBttn);
 }
