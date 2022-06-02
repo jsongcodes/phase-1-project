@@ -30,9 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             body: JSON.stringify(newCatObj)
         })
-            .then(resp => resp.json())
-            .then(({ name }) => { console.log(name) })
-
         renderCat(newCatObj);
         catForm.reset;
     }
@@ -77,6 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         likesBttn.addEventListener('click', (e) => {
             e.stopPropagation();
             ++cat.likes;
+            const newLikes = { likes: cat.likes }
             likesNum.textContent = cat.likes;
             fetch(`${baseUrl}/cats/${cat.id}`, {
                 method: 'PATCH',
@@ -84,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
-                body: JSON.stringify({ likes: cat.likes })
+                body: JSON.stringify(newLikes)
             })
             likesNum.textContent = cat.likes;
         })
@@ -94,6 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
         deleteBttn.textContent = 'Delete me! I\'ve been adopted!'
         deleteBttn.addEventListener('click', (e) => {
             e.stopPropagation();
+            fetch(`${baseUrl}/cats/${cat.id}`), {
+                method: 'DELETE'
+            }
+                .then(resp => resp.json())
+                .then(() => { catCard.remove() })
         })
 
         catCard.append(catImg, catName, catAge, catDescription, catLikes, likesNum, likesBttn, deleteBttn);
