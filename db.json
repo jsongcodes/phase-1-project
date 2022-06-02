@@ -5,7 +5,8 @@
       "name": "Minari",
       "img": "https://res.cloudinary.com/dhmlrovt9/image/upload/v1650987366/Cats/67215717119--8083889B-D765-40C6-B353-8B0ACBA5B5A5_ttgydi.jpg",
       "age": "Age: 1",
-      "description": "Description: playful, energetic, vocal, does not like to cuddle"
+      "description": "Description: playful, energetic, vocal, does not like to cuddle",
+      "likes": 0
     },
     {
       "id": 2,
@@ -29,7 +30,7 @@
       "img": "https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/53495386/5/?bust=1641679524&width=600",
       "age": "2Y/1M",
       "description": "Vocal, playful, affectionate",
-      "likes": 1
+      "likes": 0
     },
     {
       "id": 5,
