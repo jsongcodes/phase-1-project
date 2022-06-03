@@ -1,5 +1,3 @@
-
-
 const baseUrl = 'http://localhost:3000'
 const catForm = document.querySelector('#cat-form');
 const catContainer = document.querySelector('#cat-container');
