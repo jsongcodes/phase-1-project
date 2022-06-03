@@ -4,16 +4,16 @@
       "id": 1,
       "name": "Minari",
       "img": "https://res.cloudinary.com/dhmlrovt9/image/upload/v1650987366/Cats/67215717119--8083889B-D765-40C6-B353-8B0ACBA5B5A5_ttgydi.jpg",
-      "age": "Age: 1",
-      "description": "Description: playful, energetic, vocal, does not like to cuddle",
-      "likes": 6
+      "age": "1Y/3M",
+      "description": "Energetic, playful, doesn't like to cuddle",
+      "likes": 0
     },
     {
       "id": 2,
       "name": "Udon",
       "img": "https://res.cloudinary.com/dhmlrovt9/image/upload/v1650987364/Cats/IMG-2156_urlth3.jpg",
-      "age": "1Y/8M",
-      "description": "Calm, cuddly, loves to eat and sleep",
+      "age": "1Y/9M",
+      "description": "Calm, cuddly, sleepy",
       "likes": 0
     },
     {
