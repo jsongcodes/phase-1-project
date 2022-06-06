@@ -1,5 +1,11 @@
 # Phase 1 Project
-* This adoptable cats page is to help cats who need homes. Many cats are euthanized a year due to lack of homes and space in shelters. This page would allow users to see a list of adoptable cats to help with this problem. This page shows users a list of adoptable cats. Each card lists the cat's image, age, name, description, and number of likes. Users are able to like the cats they see. They are also able to add their own adoptable cats onto the page. Once the cats are adopted, their card would be deleted so that they are no longer showing on the page. 
+* This adoptable cats page is to help cats who need homes. Many cats are euthanized a year due to lack of homes and space in shelters. This page would allow users to see a list of adoptable cats to help with this problem. This page shows users a list of adoptable cats. Each card lists the cat's image, age, name, description, and number of likes. Users are able to like the cats they see. They are also able to add their own adoptable cats onto the page. Once the cats are adopted, their card would be deleted so that they are no longer showing on the page.
+
+* I created a db.json file to store the objects and arrays for new and existing cats. 
+
+* I utilized JavaScript to make the app more interactive. I added forms, event listeners, and fetch requests. 
+
+* I utilized CSS to make the website look more colorful. 
 
 ### Requirements
 * Have json-server installed
@@ -8,6 +14,3 @@
 * Fork and clone
 * Run json server for db.json
 * Open index.html in the browser
-
-### Credits
-*
